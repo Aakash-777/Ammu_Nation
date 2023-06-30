@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <title>gun shop</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        } */
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar li{
+            list-style: none;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            margin: 5px;
+            font-size: 18px;
+            padding: 0px 3px;
+            background-color: brown;   
+        }
+        .navbar li:hover{
+            background-color: white;
+            
+        }
+        .navbar li a{
+            color: white;
+            font-weight: 1000;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            color: brown;
+        }
+        .navbar input[type="text"]{
+            border: 1px solid black;
+            width: 300px;
+            height: 20px ;
+        }
+        .navbar .kart{
+            display: inline-block;
+        }
+        .navbar img{
+            width: 35px;
+            height:35px;
+            /* padding: 0px; */
+            /* margin: -14px -4px -10px 0px; */
+            margin-bottom: -10px;
+        }
+        .box{
+            border: 3px solid rgb(255, 255, 255);
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* width: 1212px;                                            doubt */ 
+        }
+        .item{
+            border: 3px solid rgb(255, 255, 255);
+            width:350px;
+            height: 245px;
+            /* flex-shrink: 3; */
+        }
+        .imgbox{
+            border: 3px solid rgb(0, 0, 0);
+            width: 350px;
+            height: 195px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .head{
+            background: url(topo_up2.jpg);
+            margin:0px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .head h1{
+            color: brown;
+            text-align: center;
+            font-size: 50px;
+            -webkit-text-stroke-width: 2px;   
+            -webkit-text-stroke-color: brown;  
+        }
+
+        .cat{
+            border: 2px solid rgb(255, 255, 255);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: url(topo_up2.jpg);
+            /* background-color: brown; */
+        }
+        ul{
+            padding:10px;
+        }
+        .catitem{
+            list-style: none;
+            border: 1px solid black;
+            margin: 2px;
+            display: inline-block;
+            margin: 2px;
+            font-size: 18px;
+            padding: 2px 20px;
+            background-color: white;
+        }
+        .catitem a{
+            text-decoration: none;
+            color:black
+        }
+        .catitem a:hover{
+            text-decoration: underline;
+        }
+        .footer{
+            background-color: rgb(210, 210, 210);
+            margin-top: 100px;
+            padding: 10px;
+            border-top: 3px solid black;
+        }
+        .footer h2{
+            color: brown;
+            -webkit-text-stroke-width: 1px;   
+            -webkit-text-stroke-color: brown;
+
+        }
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>AMMU ★ NATION</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li class="navitem"><a href="">HOME</a></li>
+            <li class="navitem"><a href="">ABOUT US</a></li>
+            <li class="navitem"><a href="">GUN NEWS</a></li>
+            <li class="navitem"><a href="">GUN FINANCING</a></li>
+            <li class="navitem"><a href="">SELL YOUR GUN</a></li>
+            <li class="navitem"><a href="">CONTACT US</a></li>
+            <input type="text" name="" id="" placeholder="SEARCH">
+            <div class="kart"><img src="brown_kart2.png" alt=""> 0 </div>
+        </ul>
+    </div>
+
+    <div class="cat">
+        <ul>
+            <li class="catitem" id="item-1"><a href="">Pistols</a></li>
+            <li class="catitem" id="item-2"><a href="">Shotguns</a></li>
+            <li class="catitem" id="item-3"><a href="">Smgs</a></li>
+            <li class="catitem" id="item-4"><a href="">Assault Rifles</a></li>
+            <li class="catitem" id="item-5"><a href="">Machine guns</a></li>
+            <li class="catitem" id="item-6"><a href="">Marksman</a></li>
+            <li class="catitem" id="item-7"><a href="">Sniper Rifle</a></li>
+            <li class="catitem" id="item-8"><a href="">RPGs</a></li>
+            <li class="catitem" id="item-8"><a href="">Explosives</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="item" id="item-1"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-2"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-3"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-4"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-5"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-6"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-7"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-8"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-9"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-10"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-11"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+        <div class="item" id="item-12"> <div class="imgbox"><img src="ak47.jpg" alt=""></div> <b>Gun</b><br> Quantity: <input type="number" name="" id=""> <input type="button" value="Place Order"></div>
+    </div>
+    <div class="footer">
+        <h2>AMMU ★ NATION</h2>
+        AMMU NATION is an privately owned firearms company organised and managed by Aakash Bhowmick and with collaboration with the Bihar government.
+        Weapons and ammunitions are sold illegally in this website to maintain peace and prosperity in our modern society. Please use your firearms
+        responsibly and within the confines of the Bihar government. Purchasing firearms from our site to commit suicide will result to death
+        sentence. 1 plate litti chokha free with a purchase worth of 6900$ or above.
+        <br><br><br><br>
+         <u>CONTACT US: </u> <br><br>
+        <b> Phone Number: </b><i>911</i>        <br>
+        <b> Email Address: </b><i>aakashbhowmick18@gmail.com </i>       <br>
+        <b> Local vendor: </b><i>69 litti chokha avenue, Bhojpuri bunglow - 420 </i>        <br>
+    </div>
+</body>
+</html>
